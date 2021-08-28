@@ -1,0 +1,5 @@
+riotgames:
+    # API key from developer.riotgames.com
+    api_key: "RGAPI-b18d3055-9976-4e30-858f-5816ab479860"
+    regions_v1: ["la1", "la2","br1","eun1", "euw1", "jp1", "kr", "na1", "oc1", "pbe1", "ru", "tr1"]
+    regions_v2: ["AMERICAS", "ASIA", "EUROPE"]
