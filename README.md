@@ -1,7 +1,5 @@
 # Veigar
-   /\
-  /--\
- /----\
+
  (∩｀-´)⊃━☆ﾟ.*･｡ﾟ
 
 ## Esta librería servirá para poder hacer consultas a la API de League of Legends
