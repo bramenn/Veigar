@@ -1,8 +1,11 @@
-from summoner.Summoner import  Summoner
+from api_client import ApiClient
+import asyncio
 
-s = Summoner("Tsukuyõmi", "la1")
-print(s.__str__())
-matchs = s.get_matchs()
-for match in matchs:
-    print(match)
-    
+async def main():
+    session = ApiClient()
+    summoner = await session.get_summoner_by_name("HelStan", "la1")
+    print(summoner.puuid)
+    summoner = await session.get_summoner_by_puuid(summoner.puuid, "la1")
+    print(summoner.name)
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())

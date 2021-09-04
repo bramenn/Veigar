@@ -1,5 +1,15 @@
 riotgames:
     # API key from developer.riotgames.com
-    api_key: "RGAPI-b18d3055-9976-4e30-858f-5816ab479860"
+    X_Riot_Token: "xxx"
     regions_v1: ["la1", "la2","br1","eun1", "euw1", "jp1", "kr", "na1", "oc1", "pbe1", "ru", "tr1"]
     regions_v2: ["AMERICAS", "ASIA", "EUROPE"]
+
+    base_url_summonerV5: "https://{region}.api.riotgames.com/"
+    summonerv4:
+        summonerByName: "lol/summoner/v4/summoners/by-name/{summoner_name}"
+        summonerByAccountId: "lol/summoner/v4/summoners/by-account/{encryptedAccountId}"
+        summonerBy_puuid: "lol/summoner/v4/summoners/by-puuid/{encrypted_puuid}"
+    
+    base_url_matchesV5: "https://{region}.api.riotgames.com/lol/match/v5/"
+    matches:
+        matches_by_puuid: "matches/by-puuid/{puuid}/ids?start={init}&count={end}"
